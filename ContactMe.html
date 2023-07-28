@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Vennela - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+body{
+    background-color: white;
+    color:black;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height:100px;
+    background-color:rgb(243, 180, 255);
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+.textOverImage{
+    width:700px;
+    height:300px;
+    display:flex;
+    background-size:cover;
+    border-radius:4px;
+    margin:4px;
+    position:relative;
+    cursor:pointer;
+    overflow:hidden;
+    
+  }
+  
+  .textOverImage > input{
+    display:none;
+  }
+  
+  .textOverImage > div,.textOverImage > h2{
+    position:absolute;
+    background-color:rgba(255,255,255,0.8);
+    bottom:200px;
+    left:4px;
+    right:4px;
+    border-radius:4px;
+    padding:8px;
+    overflow:hidden;
+    opacity:0;
+    transition:.3s;
+    font-size: 15px;
+  }
+  
+  .textOverImage:hover > h2,.textOverImage > input:checked + h2 + div{
+    bottom:4px;
+    opacity:1;
+  }
+  
+  .textOverImage > input:checked + h2{
+    bottom:-20px;
+    opacity:0;
+  }
+  
+  .textOverImage > h2{
+    margin:0;
+  }
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display:flex;
+    margin: 30px 0;
+    align-items: center;
+    
+}
+.firstSection > div{
+   width:100%;
+}
+.leftSection{
+   
+    font-size: 3rem;
+    
+}
+.leftSection ui{
+font-size: 15px;
+display:flex;
+}
+
+.secondSection{
+    max-width: 90vw;
+    margin:auto;
+    align-items: center;
+}
+.secondSection h1{
+    font-size: 1.9rem;
+}
+.secondSection .box{
+    width:100vw;
+    height:px;
+    display:flex;
+}
+.secondSection .vertical{
+    height:93px;
+    width:1px;
+    margin:0 6vw;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 35px;
+}
+
+footer{
+    background-color:rgb(253, 237, 253);
+    height:233px;
+    padding:40px 123px;
+}
+footer p{
+    text-align: center;
+    padding:45px 0px;
+    color:rgb(101, 99, 99);
+}
+.footer{
+    display:flex;
+    justify-content: space-evenly;
+}
+.footer ul {
+    list-style: none;
+}
+.footer ul a{
+    text-decoration: none;
+    color:black;
+}
+.footer>div{
+    width:123px;
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-color: rgb(242, 240, 240);
+    }
+    .box{
+        flex-direction: column;
+    }
+    .secondSection.vertical{
+        height:unset;
+
+    }
+    .vertical-title,.vertical-desc{
+        left:45px;
+    }
+    .secondSection.box{
+        width:50vw;
+    }
+    nav{
+        flex-direction: column;
+    }
+.firstSection{
+    flex-direction: column-reverse;
+}
+.leftSection{
+    width:100% !important;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+
+}
+.leftSection ui{
+    width:45%;
+    margin-bottom: 73px;
+}
+body{
+    min-width: fit-content;
+}
+.column {
+    width: 100%;
+  }
+
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        
+            <div class="left">Vennela's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div><p style="font-size: 30px;text-align:center;">Contact Me</p></div>
+                <br>
+                <ui>
+                    <label class="textOverImage" style="background-image:url(https://cdn.vectorstock.com/i/preview-1x/88/59/phone-call-icon-style-is-flat-symbol-dark-vector-27628859.jpg)">
+                        <input type="checkbox">
+                        <h2>(+91)9441438357</h2>
+                      </label>
+                      <label class="textOverImage" style="background-image:url(https://static.vecteezy.com/system/resources/previews/000/547/340/original/envelope-mail-icon-vector-illustration.jpg)">
+                        <input type="checkbox">
+                        <h2>vennela15012003@gmail.com</h2>
+                      </label>
+                      <label class="textOverImage" style="background-image:url(https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png)">
+                       <h2><a href="https://www.linkedin.com/in/vennela-g-b4a847216">Click here</a></h2>
+                      </label>
+                      <label class="textOverImage" style="background-image:url(https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)">
+                        <h2><a href="https://github.com/vennelag15?tab=repositories">Click here</a></h2>
+                      </label>
+                    
+                
+            </ui>
+             </div>
+
+        </section> 
+    </main>
+    <footer>
+         <div class="footer">
+            <div class="footer-first">
+            <h3>Vennela's Portfolio</h3>
+        </div>
+            <div class="footer-second">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="footer-third">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="footer-fourth">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+            </ul>
+        </div>
+
+    </div>
+  <p>  Copyright&#169;   www.vennelaPortfolio.com | All rights reserved</p>
+       
+        
+    </footer>
+
+</body>
+</html>

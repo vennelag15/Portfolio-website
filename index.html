@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Vennela - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+body{
+    background-color: white;
+    color:black;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    height:100px;
+    background-color:rgb(243, 180, 255);
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+main hr{
+    border:0;
+    background:rgb(243, 180, 255);
+    height:1.2px;
+    margin:10px 40px;
+}
+
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display:flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    align-items: center;
+}
+.firstSection > div{
+   width:30%;
+}
+.leftSection{
+    width:34px;
+    font-size: 3rem;
+    
+}
+.leftSection .buttons{
+    padding:50px 0;
+}
+.leftSection .btn{
+padding:12px;
+background:rgb(213, 95, 237);
+color:white;
+border:2px solid white;
+border-radius:6px;
+font-size:20px;
+cursor:pointer;
+}
+.rightSection img{
+    width:80%;
+    margin: 50px 0;
+}
+.secondSection{
+    max-width: 90vw;
+    margin:auto;
+    align-items: center;
+}
+.secondSection h1{
+    font-size: 1.9rem;
+}
+.secondSection .box{
+    width:100vw;
+    height:px;
+    display:flex;
+}
+.secondSection .vertical{
+    height:93px;
+    width:1px;
+    margin:0 6vw;
+}
+footer{
+    background-color:rgb(253, 237, 253);
+    height:233px;
+    padding:40px 123px;
+}
+footer p{
+    text-align: center;
+    padding:45px 0px;
+    color:rgb(101, 99, 99);
+}
+.footer{
+    display:flex;
+    justify-content: space-evenly;
+}
+.footer ul {
+    list-style: none;
+}
+.footer ul a{
+    text-decoration: none;
+    color:black;
+}
+.footer>div{
+    width:123px;
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-color: rgb(242, 240, 240);
+    }
+    .box{
+        flex-direction: column;
+    }
+    .secondSection.vertical{
+        height:unset;
+
+    }
+    .vertical-title,.vertical-desc{
+        left:45px;
+    }
+    .secondSection.box{
+        width:50vw;
+    }
+    nav{
+        flex-direction: column;
+    }
+.firstSection{
+    flex-direction: column-reverse;
+}
+.leftSection{
+    width:100% !important;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.rightSection{
+    width:721px !important;
+    display:flex;
+    justify-content: center;
+
+}
+
+.rightSection img{
+    width:45%;
+    margin-bottom: 73px;
+}
+.secondSection{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+body{
+    min-width: fit-content;
+}
+
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        
+            <div class="left">Vennela's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div><p>Hello!</p><p style="font-size: 40px;"> This is <span class="purple"><b>G.Vennela</b></span></p></div>
+               
+               <span id="element"></span>
+               <div class="buttons">
+                  <button class="btn" onclick="window.location.href = 'https://docs.google.com/document/d/1ux0g-qcNhiNmKDukDuwJkvYgFP3UZIXZgzAgU6koqvE/edit?usp=sharing';">Download Resume</button>
+               </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" width="400" height="400">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+          <p style="font-size:25px;"><b>Skills:  </b> Java,MySQL,HTML,CSS,JavaScript,PHP,AWS Cloud,R,Machine learning,Python</p>
+        <br>
+        <br>
+        </section>   
+    </main>
+    <footer>
+         <div class="footer">
+            <div class="footer-first">
+            <h3>Vennela's Portfolio</h3>
+        </div>
+            <div class="footer-second">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="footer-third">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="footer-fourth">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Achievements.html">Achievements</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+            </ul>
+        </div>
+
+    </div>
+  <p>  Copyright&#169;   www.vennelaPortfolio.com | All rights reserved</p>
+       
+        
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>I am a </i> student.', '&amp; a passionate coder.'],
+          typeSpeed: 50,
+        });
+      </script>
+
+</body>
+</html>
